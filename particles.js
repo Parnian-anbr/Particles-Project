@@ -25,3 +25,5 @@ function clickControlsIcon() {
         controls.innerHTML = 'byeeeee';
     }
 }
+
+let x;
