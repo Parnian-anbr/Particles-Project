@@ -15,15 +15,17 @@ document.getElementById("controlsIcon").onclick = function () { clickControlsIco
 
 function clickControlsIcon() {
     const controls = document.getElementById("controlsIcon");
-    let x;
-    if (x == 0) {
-        controls.innerHTML = 'hellloooo';
-        x = 1;
+    const text = controls.innerText;
+    const show = '↓ Show Controls';
+    const menu = document.getElementById('hideAndShow');
+
+    if (text === show) {
+        controls.innerText = '↑ Hide Controls';
+        menu.style.display = 'block';
     }
     else {
-        x = 0;
-        controls.innerHTML = 'byeeeee';
+        controls.innerText = '↓ Show Controls'
+        menu.style.display = 'none';
     }
-}
 
-let x;
+}
