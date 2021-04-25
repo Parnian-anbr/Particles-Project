@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+
+
+<html>
+
+<head>
+    <meta charset='UTF-8' />
+    <title>Paricles Project</title>
+    <link rel='stylesheet' href='style.css' />
+
+</head>
+
+<body>
+
+    <header>
+        <h2 class='titre'> Celestial Mechanics
+            (or not¯&#92;_(ツ)_&#47;¯) </h2>
+    </header>
+    <div class='canvasContainer'>
+        <canvas id='canvas' width="800" height="600">
+        </canvas>
+        <ul class='menu'>
+            <li class='dropdown'>
+                <h3 id='controlsIcon'> &#8595; Controls</h3>
+                <ul class="menuItself">
+                    <form class="controls">
+                        <h2 class='menuHeader'>Particles</h2>
+                        <p>to add particles double-click in the canvas. The added particles will have the
+                            characteristics defined below:
+                            <br>
+                        <div class='mass-and-color'>
+                            <label>Mass:</label><input type="range" id="RangePicker" min="0" max="500" step="1"
+                                value='0'><output id="output"></output><br>
+                            <label>Color:</label><input type="color" id="colorPicker" value="#ffffff">
+                        </div>
+                        </p>
+
+                    </form>
+                    <li class='start-stop'>
+                        <button>START</button>
+                        <button>STOP</button>
+                    </li>
+                </ul>
+        </ul>
+
+    </div>
+
+    <footer></footer>
+
+    <script src="particles.js"></script>
+
+</body>
+
+</html>
